@@ -1,4 +1,4 @@
-diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/clucene/src/CLucene/StdHeader.h qt-src-4.8.7/src/3rdparty/clucene/src/CLucene/StdHeader.h
+Index: src/3rdparty/clucene/src/CLucene/StdHeader.h
 --- src/3rdparty/clucene/src/CLucene/StdHeader.h	2015-05-07 16:14:48.000000000 +1000
 +++ src/3rdparty/clucene/src/CLucene/StdHeader.h	2016-03-23 10:05:39.819032300 +1100
 @@ -123,6 +123,9 @@
@@ -11,7 +11,7 @@ diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/clucene/src/CLucene/S
  	//hashing is all or nothing!
  	#include <hash_map>
  	#include <hash_set>
-diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/clucene/src/CLucene/util/VoidMap.h qt-src-4.8.7/src/3rdparty/clucene/src/CLucene/util/VoidMap.h
+Index: src/3rdparty/clucene/src/CLucene/util/VoidMap.h
 --- src/3rdparty/clucene/src/CLucene/util/VoidMap.h	2015-05-07 16:14:48.000000000 +1000
 +++ src/3rdparty/clucene/src/CLucene/util/VoidMap.h	2016-03-23 10:07:30.676025400 +1100
 @@ -222,12 +222,22 @@
@@ -37,7 +37,7 @@ diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/clucene/src/CLucene/u
  public:
  	CLSet ( const bool deleteKey=false, const bool deleteValue=false )
  	{
-diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/runtime/ArgList.h qt-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/runtime/ArgList.h
+Index: src/3rdparty/javascriptcore/JavaScriptCore/runtime/ArgList.h
 --- src/3rdparty/javascriptcore/JavaScriptCore/runtime/ArgList.h	2015-05-07 16:14:48.000000000 +1000
 +++ src/3rdparty/javascriptcore/JavaScriptCore/runtime/ArgList.h	2016-03-23 10:08:35.476483400 +1100
 @@ -172,7 +172,9 @@
@@ -50,7 +50,7 @@ diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/JavaSc
      };
  
      class ArgList {
-diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/wtf/StringExtras.h qt-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/wtf/StringExtras.h
+Index: src/3rdparty/javascriptcore/JavaScriptCore/wtf/StringExtras.h
 --- src/3rdparty/javascriptcore/JavaScriptCore/wtf/StringExtras.h	2015-05-07 16:14:48.000000000 +1000
 +++ src/3rdparty/javascriptcore/JavaScriptCore/wtf/StringExtras.h	2016-03-23 10:09:39.683091600 +1100
 @@ -36,6 +36,7 @@
@@ -69,7 +69,7 @@ diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/JavaSc
  
  #if COMPILER(MSVC7) || OS(WINCE)
  
-diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/wtf/TypeTraits.h qt-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/wtf/TypeTraits.h
+Index: src/3rdparty/javascriptcore/JavaScriptCore/wtf/TypeTraits.h
 --- src/3rdparty/javascriptcore/JavaScriptCore/wtf/TypeTraits.h	2015-05-07 16:14:48.000000000 +1000
 +++ src/3rdparty/javascriptcore/JavaScriptCore/wtf/TypeTraits.h	2016-03-23 10:10:37.381597300 +1100
 @@ -170,8 +170,16 @@
@@ -89,7 +89,7 @@ diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/JavaSc
  
  #else
  
-diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/WebKit.pri qt-src-4.8.7/src/3rdparty/javascriptcore/WebKit.pri
+Index: src/3rdparty/javascriptcore/WebKit.pri
 --- src/3rdparty/javascriptcore/WebKit.pri	2015-05-07 16:14:48.000000000 +1000
 +++ src/3rdparty/javascriptcore/WebKit.pri	2016-03-23 10:11:28.949760100 +1100
 @@ -22,7 +22,7 @@
@@ -101,7 +101,7 @@ diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/WebKit
  } else {
      CONFIG(QTDIR_build) {
          QT += webkit
-diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/runtime/ArgList.h qt-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/runtime/ArgList.h
+Index: src/3rdparty/webkit/Source/JavaScriptCore/runtime/ArgList.h
 --- src/3rdparty/webkit/Source/JavaScriptCore/runtime/ArgList.h	2015-05-07 16:14:46.000000000 +1000
 +++ src/3rdparty/webkit/Source/JavaScriptCore/runtime/ArgList.h	2016-03-23 10:12:18.631802300 +1100
 @@ -174,7 +174,9 @@
@@ -114,7 +114,7 @@ diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/webkit/Source/JavaScr
      };
  
      class ArgList {
-diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/wtf/StringExtras.h qt-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/wtf/StringExtras.h
+Index: src/3rdparty/webkit/Source/JavaScriptCore/wtf/StringExtras.h
 --- src/3rdparty/webkit/Source/JavaScriptCore/wtf/StringExtras.h	2015-05-07 16:14:46.000000000 +1000
 +++ src/3rdparty/webkit/Source/JavaScriptCore/wtf/StringExtras.h	2016-03-23 10:13:35.639305900 +1100
 @@ -37,6 +37,7 @@
@@ -133,7 +133,7 @@ diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/webkit/Source/JavaScr
  
  inline double wtf_vsnprintf(char* buffer, size_t count, const char* format, va_list args)
  {
-diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/wtf/TypeTraits.h qt-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/wtf/TypeTraits.h
+Index: src/3rdparty/webkit/Source/JavaScriptCore/wtf/TypeTraits.h
 --- src/3rdparty/webkit/Source/JavaScriptCore/wtf/TypeTraits.h	2015-05-07 16:14:46.000000000 +1000
 +++ src/3rdparty/webkit/Source/JavaScriptCore/wtf/TypeTraits.h	2016-03-23 10:14:15.788643700 +1100
 @@ -183,8 +183,16 @@
