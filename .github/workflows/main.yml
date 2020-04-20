@@ -31,7 +31,8 @@ jobs:
             rem # patch -p0 < vs2019patch.patch
             set QTDIR="d:\a\qt_4_8_7_win\qt_4_8_7_win\bin"
             set PATH=%QTDIR%\bin;%PATH%
-            yes yes | configure -nomake examples -nomake demos -opensource -platform win32-msvc2015
-            nmake
+            patch -p1 < qt-4.8.7-win.patch
+            rem yes yes | configure -nomake examples -nomake demos -opensource -platform win32-msvc2015
+            rem nmake
         shell: cmd
 
