@@ -1,6 +1,6 @@
 diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/clucene/src/CLucene/StdHeader.h qt-src-4.8.7/src/3rdparty/clucene/src/CLucene/StdHeader.h
---- qt-everywhere-opensource-src-4.8.7/src/3rdparty/clucene/src/CLucene/StdHeader.h	2015-05-07 16:14:48.000000000 +1000
-+++ qt-src-4.8.7/src/3rdparty/clucene/src/CLucene/StdHeader.h	2016-03-23 10:05:39.819032300 +1100
+--- src/3rdparty/clucene/src/CLucene/StdHeader.h	2015-05-07 16:14:48.000000000 +1000
++++ src/3rdparty/clucene/src/CLucene/StdHeader.h	2016-03-23 10:05:39.819032300 +1100
 @@ -123,6 +123,9 @@
  #endif
  
@@ -12,8 +12,8 @@ diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/clucene/src/CLucene/S
  	#include <hash_map>
  	#include <hash_set>
 diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/clucene/src/CLucene/util/VoidMap.h qt-src-4.8.7/src/3rdparty/clucene/src/CLucene/util/VoidMap.h
---- qt-everywhere-opensource-src-4.8.7/src/3rdparty/clucene/src/CLucene/util/VoidMap.h	2015-05-07 16:14:48.000000000 +1000
-+++ qt-src-4.8.7/src/3rdparty/clucene/src/CLucene/util/VoidMap.h	2016-03-23 10:07:30.676025400 +1100
+--- src/3rdparty/clucene/src/CLucene/util/VoidMap.h	2015-05-07 16:14:48.000000000 +1000
++++ src/3rdparty/clucene/src/CLucene/util/VoidMap.h	2016-03-23 10:07:30.676025400 +1100
 @@ -222,12 +222,22 @@
  	typename _KeyDeletor=CL_NS(util)::Deletor::Dummy,
  	typename _ValueDeletor=CL_NS(util)::Deletor::Dummy>
@@ -38,8 +38,8 @@ diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/clucene/src/CLucene/u
  	CLSet ( const bool deleteKey=false, const bool deleteValue=false )
  	{
 diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/runtime/ArgList.h qt-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/runtime/ArgList.h
---- qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/runtime/ArgList.h	2015-05-07 16:14:48.000000000 +1000
-+++ qt-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/runtime/ArgList.h	2016-03-23 10:08:35.476483400 +1100
+--- src/3rdparty/javascriptcore/JavaScriptCore/runtime/ArgList.h	2015-05-07 16:14:48.000000000 +1000
++++ src/3rdparty/javascriptcore/JavaScriptCore/runtime/ArgList.h	2016-03-23 10:08:35.476483400 +1100
 @@ -172,7 +172,9 @@
          void operator delete[](void*);
  
@@ -51,8 +51,8 @@ diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/JavaSc
  
      class ArgList {
 diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/wtf/StringExtras.h qt-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/wtf/StringExtras.h
---- qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/wtf/StringExtras.h	2015-05-07 16:14:48.000000000 +1000
-+++ qt-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/wtf/StringExtras.h	2016-03-23 10:09:39.683091600 +1100
+--- src/3rdparty/javascriptcore/JavaScriptCore/wtf/StringExtras.h	2015-05-07 16:14:48.000000000 +1000
++++ src/3rdparty/javascriptcore/JavaScriptCore/wtf/StringExtras.h	2016-03-23 10:09:39.683091600 +1100
 @@ -36,6 +36,7 @@
  #if COMPILER(MSVC)
  // FIXME: why a COMPILER check instead of OS? also, these should be HAVE checks
@@ -70,8 +70,8 @@ diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/JavaSc
  #if COMPILER(MSVC7) || OS(WINCE)
  
 diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/wtf/TypeTraits.h qt-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/wtf/TypeTraits.h
---- qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/wtf/TypeTraits.h	2015-05-07 16:14:48.000000000 +1000
-+++ qt-src-4.8.7/src/3rdparty/javascriptcore/JavaScriptCore/wtf/TypeTraits.h	2016-03-23 10:10:37.381597300 +1100
+--- src/3rdparty/javascriptcore/JavaScriptCore/wtf/TypeTraits.h	2015-05-07 16:14:48.000000000 +1000
++++ src/3rdparty/javascriptcore/JavaScriptCore/wtf/TypeTraits.h	2016-03-23 10:10:37.381597300 +1100
 @@ -170,8 +170,16 @@
  
      // GCC's libstdc++ 20070724 and later supports C++ TR1 type_traits in the std namespace.
@@ -90,8 +90,8 @@ diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/JavaSc
  #else
  
 diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/WebKit.pri qt-src-4.8.7/src/3rdparty/javascriptcore/WebKit.pri
---- qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/WebKit.pri	2015-05-07 16:14:48.000000000 +1000
-+++ qt-src-4.8.7/src/3rdparty/javascriptcore/WebKit.pri	2016-03-23 10:11:28.949760100 +1100
+--- src/3rdparty/javascriptcore/WebKit.pri	2015-05-07 16:14:48.000000000 +1000
++++ src/3rdparty/javascriptcore/WebKit.pri	2016-03-23 10:11:28.949760100 +1100
 @@ -22,7 +22,7 @@
  
  DEFINES += BUILDING_QT__=1
@@ -102,8 +102,8 @@ diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/javascriptcore/WebKit
      CONFIG(QTDIR_build) {
          QT += webkit
 diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/runtime/ArgList.h qt-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/runtime/ArgList.h
---- qt-everywhere-opensource-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/runtime/ArgList.h	2015-05-07 16:14:46.000000000 +1000
-+++ qt-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/runtime/ArgList.h	2016-03-23 10:12:18.631802300 +1100
+--- src/3rdparty/webkit/Source/JavaScriptCore/runtime/ArgList.h	2015-05-07 16:14:46.000000000 +1000
++++ src/3rdparty/webkit/Source/JavaScriptCore/runtime/ArgList.h	2016-03-23 10:12:18.631802300 +1100
 @@ -174,7 +174,9 @@
          void operator delete[](void*);
  
@@ -115,8 +115,8 @@ diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/webkit/Source/JavaScr
  
      class ArgList {
 diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/wtf/StringExtras.h qt-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/wtf/StringExtras.h
---- qt-everywhere-opensource-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/wtf/StringExtras.h	2015-05-07 16:14:46.000000000 +1000
-+++ qt-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/wtf/StringExtras.h	2016-03-23 10:13:35.639305900 +1100
+--- src/3rdparty/webkit/Source/JavaScriptCore/wtf/StringExtras.h	2015-05-07 16:14:46.000000000 +1000
++++ src/3rdparty/webkit/Source/JavaScriptCore/wtf/StringExtras.h	2016-03-23 10:13:35.639305900 +1100
 @@ -37,6 +37,7 @@
  #if COMPILER(MSVC)
  // FIXME: why a COMPILER check instead of OS? also, these should be HAVE checks
@@ -134,8 +134,8 @@ diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/webkit/Source/JavaScr
  inline double wtf_vsnprintf(char* buffer, size_t count, const char* format, va_list args)
  {
 diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/wtf/TypeTraits.h qt-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/wtf/TypeTraits.h
---- qt-everywhere-opensource-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/wtf/TypeTraits.h	2015-05-07 16:14:46.000000000 +1000
-+++ qt-src-4.8.7/src/3rdparty/webkit/Source/JavaScriptCore/wtf/TypeTraits.h	2016-03-23 10:14:15.788643700 +1100
+--- src/3rdparty/webkit/Source/JavaScriptCore/wtf/TypeTraits.h	2015-05-07 16:14:46.000000000 +1000
++++ src/3rdparty/webkit/Source/JavaScriptCore/wtf/TypeTraits.h	2016-03-23 10:14:15.788643700 +1100
 @@ -183,8 +183,16 @@
  
      // GCC's libstdc++ 20070724 and later supports C++ TR1 type_traits in the std namespace.
@@ -154,8 +154,8 @@ diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/webkit/Source/JavaScr
  #else
  
 diff -Naur qt-everywhere-opensource-src-4.8.7/src/3rdparty/webkit/Source/WebKit.pri qt-src-4.8.7/src/3rdparty/webkit/Source/WebKit.pri
---- qt-everywhere-opensource-src-4.8.7/src/3rdparty/webkit/Source/WebKit.pri	2015-05-07 16:14:46.000000000 +1000
-+++ qt-src-4.8.7/src/3rdparty/webkit/Source/WebKit.pri	2016-03-23 10:15:01.345491800 +1100
+--- src/3rdparty/webkit/Source/WebKit.pri	2015-05-07 16:14:46.000000000 +1000
++++ src/3rdparty/webkit/Source/WebKit.pri	2016-03-23 10:15:01.345491800 +1100
 @@ -38,7 +38,7 @@
  
  DEFINES += BUILDING_QT__=1
