@@ -32,7 +32,7 @@ jobs:
             set QTDIR="d:\a\qt_4_8_7_win\qt_4_8_7_win\bin"
             set PATH=%QTDIR%\bin;%PATH%
             patch -p0 < qt-4.8.7-win.patch
-            //  rem yes yes | configure -nomake examples -nomake demos -opensource -platform win32-msvc2015
-            // rem nmake
+            rem yes yes | configure -debug-and-release -no-qt3support -no-multimedia -no-audio-backend -no-phonon -no-phonon-backend -no-libtiff -no-libmng -no-dbus -no-nis -webkit -nomake examples -nomake demos -opensource -platform win32-msvc2015
+            nmake
         shell: cmd
 
