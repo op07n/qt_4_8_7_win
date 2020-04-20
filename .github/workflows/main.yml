@@ -28,10 +28,10 @@ jobs:
         if: startsWith(matrix.os, 'windows')
         run: |
             call "%programfiles(x86)%\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvars32.bat"
-            # patch -p0 < vs2019patch.patch
+            rem # patch -p0 < vs2019patch.patch
             set QTDIR="d:\a\qt_4_8_7_win\qt_4_8_7_win\bin"
             set PATH=%QTDIR%\bin;%PATH%
-            yes yes | configure -thread -fast -nomake examples -nomake demos -opensource -platform win32-msvc2015
+            yes yes | configure -nomake examples -nomake demos -opensource -platform win32-msvc2015
             nmake
         shell: cmd
 
