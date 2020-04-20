@@ -31,7 +31,7 @@ jobs:
             # patch -p0 < vs2019patch.patch
             set QTDIR="d:\a\qt_4_8_7_win\qt_4_8_7_win\bin"
             set PATH=%QTDIR%\bin;%PATH%
-            configure -platform win32-msvc2015
+            yes yes | configure -thread -fast -nomake examples -nomake demos -opensource -platform win32-msvc2015
             nmake
         shell: cmd
 
